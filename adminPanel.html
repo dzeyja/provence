@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./css/adminka.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Добавить товар</h1>
+      <form action="">
+        Изображение товара: <input type="file" name="product_image" />
+        <input placeholder="Название товара" type="text" name="product_name" />
+        <input
+          placeholder="Категория товара"
+          type="text"
+          name="product_category"
+        />
+        <input
+          placeholder="Описание товара"
+          type="text"
+          name="product_suptitle"
+        />
+        <input type="submit" value="Добавить товар" />
+      </form>
+      <h1>Удалить товар</h1>
+      <form action="">
+        <input
+          placeholder="ID для удаления товара"
+          type="text"
+          name="product_id"
+        />
+        <input type="submit" value="Удалить товар" />
+      </form>
+
+      <h1>Товары</h1>
+      <div class="tovary">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Название товара</th>
+              <th>Категория товара</th>
+              <th>Изображение товара</th>
+              <th>Описание товара</th>
+              <th>Цена</th>
+              <th>Количество</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Товар 1</td>
+              <td>Горячие блюда</td>
+              <td>IMG</td>
+              <td>Классный</td>
+              <td>100</td>
+              <td>10</td>
+              <td>
+                <a href="#" class="btn btn-danger">Удалить</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Товар 2</td>
+              <td>Первые блюда</td>
+              <td>IMG</td>
+              <td>Классный</td>
+              <td>150</td>
+              <td>5</td>
+              <td>
+                <a href="#" class="btn btn-danger">Удалить</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
